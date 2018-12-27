@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #eeeeee
+}
+
+.wrapper{
+    margin: auto;
+    width: 55%;
+}
+
+.title {
+    /* padding: 3%; */
+    padding:0px;
+}
+
+.title h2 {
+    margin: auto;
+    width: 17%;
+    padding: 5% 2% 2% 2%;
+    margin-bottom: 2.5%;
+    border-bottom: 3px solid #39a7d6;
+}
+
+.form{
+}
+
+input[type=text], input[type="email"] {
+    width: 90%;
+    padding: 1.5%;
+    padding-left: 3%;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: #097670;
+    padding: 1.5%;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+input[type=submit]:hover{
+    background-color: #00615d;
+}
+
+.message {
+    width: 90%;
+    background: #cef;
+    height: 3%;
+    padding: 2%;
+    padding-left: 3%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    color: #8b8a10;
+    border-radius: 10px;
+    /* border: 1px solid #8b8a10 */
+}
+
+.image{
+    float: left;
+    align-items: center
+}
+
+.txtMsg{
+    float:left;
+    padding-top: 1%;
+    padding-left: 1%;
+    
+}
+
+/* table styling */
+
+.content{
+    margin:5% 0;
+}
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    padding: 8px;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #097670;
+    color: white;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even){
+      background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+/* link */
+.link{
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 1%;
+    margin-bottom : 2%
+}
