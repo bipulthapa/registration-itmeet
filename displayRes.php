@@ -19,6 +19,7 @@
                     <th>Email</th>
                     <th>Contact</th>
                     <th>Field</th>
+                    <th>College</th>
                     <th>Date/Time</th>
                 </tr>
                 <?php 
@@ -33,6 +34,7 @@
                                     <td>".$row['email']."</td>
                                     <td>".$row['contact']."</td>
                                     <td>".$row['field']."</td>
+                                    <td>".$row['college']."</td>
                                     <td>".$row['time']."</td>
                                 <tr>
                             ";

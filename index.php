@@ -1,14 +1,15 @@
 <?php 
     require_once('connect.php');
 
-    $msg = "Fill out all fields";
+    $msg = "Fill out the fields. Collge/School field is optional";
     if (isset($_POST['submit'])){
         $fullName = $_POST['fullName'];
         $email = $_POST['email'];
         $contact = $_POST['contact'];
         $field = $_POST['field'];
+        $college = $_POST['college'];
 
-        $sql = "INSERT INTO register (fullName,email,contact,field) values ('$fullName','$email','$contact','$field')";
+        $sql = "INSERT INTO register (fullName,email,contact,field,college) values ('$fullName','$email','$contact','$field','$college')";
         $res = mysqli_query($conn,$sql);
         if ($res){
             $msg = "Successfully Registered!";
@@ -30,7 +31,7 @@
         <div class="wrapper">
             <div class="title">
                 <!-- <h1> Registration for Digital Consumer Rights Program <h1> -->
-                <img src="Banner.jpg" height="auto" width="100%">
+                <img src="Banner.png" height="auto" width="100%">
                 <h2>Registration</h2>
             </div>  
                 <div class="form">
@@ -39,6 +40,7 @@
                         <input type="email" name="email" autocomplete="off" required placeholder="Email...">
                         <input type="text" name="contact"  required autocomplete="off" placeholder="Contact...">
                         <input type="text" name="field"  required placeholder="Field...">
+                        <input type="text" name="college" placeholder="College/School (optional)">
                         <input type="submit" name="submit" value="Submit">
                     </form>
                 </div>  
